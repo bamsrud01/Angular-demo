@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular demo</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body ng-app="basicApp">
+    <h1>Angular Mouse Directives</h1>
+    <div class="contain">
+      <h3>Mouse Up</h3>
+      <div class="block" ng-mouseup="upcount = upcount + 1" ng-init="upcount=0"></div>
+      <p>Up Count: {{upcount}}</p>
+    </div>
+    <div class="contain">
+      <h3>Mouse Down</h3>
+      <div class="block" ng-mousedown="downcount = downcount + 1" ng-init="downcount=0"></div>
+      <p>Down Count: {{downcount}}</p>
+    </div>
+    <div class="contain">
+      <h3>Mouse Enter</h3>
+      <div class="block" ng-mouseenter="entercount = entercount + 1" ng-init="entercount=0"></div>
+      <p>Enter Count: {{entercount}}</p>
+    </div>
+    <div class="contain">
+      <h3>Mouse Leave</h3>
+      <div class="block" ng-mouseleave="leavecount = leavecount + 1" ng-init="leavecount=0"></div>
+      <p>Leave Count: {{leavecount}}</p>
+    </div>
+    <div class="contain">
+      <h3>Mouse Over</h3>
+      <div class="block" ng-mouseover="overcount = overcount + 1" ng-init="overcount=0"></div>
+      <p>Over Count: {{overcount}}</p>
+    </div>
+    <div class="contain">
+      <h3>Mouse Move</h3>
+      <div class="block" ng-mousemove="movecount = movecount + 1" ng-init="movecount=0"></div>
+      <p>Move Count: {{movecount}}</p>
+    </div class="contain">
+  </body>
+</html>

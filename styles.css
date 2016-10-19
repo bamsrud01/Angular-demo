@@ -1,0 +1,11 @@
+.block {
+  height: 200px;
+  width: 200px;
+  border: solid black 3px;
+  background-color: orange;
+}
+
+.contain {
+  width: 300px;
+  float: left;
+}
